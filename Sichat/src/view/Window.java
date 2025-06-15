@@ -7,7 +7,6 @@ import control.ChatController;
 import java.awt.*;
 import java.io.File;
 
-@SuppressWarnings("serial")
 public class Window extends JFrame {
 
     private String userName;
@@ -122,7 +121,6 @@ public class Window extends JFrame {
             if (result == JFileChooser.APPROVE_OPTION) {
                 File selectedFile = fileChooser.getSelectedFile();
                 controller.enviarArquivo(selectedFile);
-                appendSystemMessage("Você enviou o arquivo: " + selectedFile.getName());
             }
         });
     }

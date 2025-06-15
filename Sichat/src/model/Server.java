@@ -11,7 +11,8 @@ public class Server {
         this.porta = porta;
     }
 
-    public Socket esperarConexao() throws IOException {
+    @SuppressWarnings("resource")
+	public Socket esperarConexao() throws IOException {
         ServerSocket serverSocket = new ServerSocket(porta);
         System.out.println("Servidor aguardando conexão na porta " + porta + "...");
         return serverSocket.accept();
