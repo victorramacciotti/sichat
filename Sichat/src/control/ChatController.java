@@ -78,7 +78,7 @@ public class ChatController {
         if (handler != null) {
             try {
                 handler.enviarArquivo(file);
-                window.appendSystemMessage("Você enviou o arquivo: " + file.getName());
+//                window.appendSystemMessage("Você enviou o arquivo: " + file.getName());
             } catch (IOException e) {
                 window.appendSystemMessage("Erro ao enviar o arquivo.");
             }
