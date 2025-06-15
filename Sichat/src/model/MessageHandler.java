@@ -69,4 +69,12 @@ public class MessageHandler {
             }
         }
     }
+    
+    public PrintWriter getSaida() {
+        return saida;
+    }
+    
+    public BufferedReader getEntrada() {
+        return entrada;
+    }
 }
